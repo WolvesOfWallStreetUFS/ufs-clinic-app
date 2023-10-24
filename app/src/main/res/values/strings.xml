@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">UFS CLINIC</string>
-    <string name="login">Login</string>
-
+    <string name="top_header_main">Welcome to</string>
+    <string name="below_header_main">UFS Virtual Clinic</string>
 </resources>
