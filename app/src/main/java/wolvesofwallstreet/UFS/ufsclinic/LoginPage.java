@@ -16,6 +16,12 @@ public class LoginPage extends AppCompatActivity {
         setContentView(R.layout.activity_login_page);
 
         btnLogin = findViewById(R.id.btnLogin);
+        txtEmail = findViewById(R.id.txtEmail);
+        txtPassword = findViewById(R.id.txtPassword);
+        txtForgotPassword = findViewById(R.id.txtForgotPassword);
+        txtContinue = findViewById(R.id.txtContinue);
+
+
 
     }
 }
