@@ -40,7 +40,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:paddingHorizontal="25dp"
-        app:boxStrokeColor="@color/black">
+        app:boxStrokeColor="@color/black"
+        android:textColorHint="@color/black"
+        app:hintTextColor="@color/black"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtEmail"
@@ -48,7 +51,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
-            android:textColor="@color/black" />
+             />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -59,15 +62,19 @@
         android:paddingHorizontal="25dp"
         android:paddingTop="10dp"
         app:boxStrokeColor="@color/black"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/black"
+        app:hintTextColor="@color/black"
+        android:textColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_password"
-            android:textColor="@color/black"
-            android:inputType="textPassword" />
+
+            android:inputType="textPassword"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
