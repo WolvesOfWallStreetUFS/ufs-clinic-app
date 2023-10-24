@@ -9,24 +9,8 @@
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Material3.Dark.NoActionBar"
+        android:theme="@style/Theme.UFSCLINIC"
         tools:targetApi="31">
-        <activity
-            android:name=".ForgotPassword"
-            android:exported="false"
-            android:label="@string/title_activity_forgot_password"
-            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
-        <activity
-            android:name=".Onboarding"
-            android:exported="false" />
-        <activity
-            android:name=".DatabaseHelper"
-            android:exported="false"
-            android:label="@string/title_activity_database_helper"
-            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
-        <activity
-            android:name=".LoginPage"
-            android:exported="false" />
         <activity
             android:name=".Splash"
             android:exported="true">

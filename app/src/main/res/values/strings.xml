@@ -1,20 +1,3 @@
 <resources>
     <string name="app_name">UFS CLINIC</string>
-    <string name="top_header_main">Welcome to</string>
-    <string name="below_header_main">UFS Virtual Clinic</string>
-    <string name="login">Login</string>
-    <string name="staff">Continue As Stuff</string>
-    <string name="top_header_login">Welcome Back</string>
-    <string name="hint_email">Email</string>
-    <string name="hint_password">Password</string>
-    <string name="forgot_password">Forgot Password?</string>
-    <string name="title_activity_database_helper">DatabaseHelper</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="skip_tour">Skip Tour</string>
-    <string name="appoinments_onB1">Effortlessly schedule your clinic appointments at your convenience.
-        Say goodbye to long queues and hello to hassle-free bookings.
-    </string>
-    <string name="title_activity_forgot_password">ForgotPassword</string>
 </resources>
