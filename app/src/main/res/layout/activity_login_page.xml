@@ -1,140 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-=======
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> 5990c0c (updated the string resources)
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    android:background="@color/white"
-    android:orientation="vertical"
-    tools:context=".LoginPage">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="39dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/top_header_login"
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/login"
-        android:textColor="@color/blue"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/lifesavers_bust" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:paddingHorizontal="25dp"
-        app:boxStrokeColor="@color/black"
-        android:textColorHint="@color/black"
-        app:hintTextColor="@color/black"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_email"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/black"
-             />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingHorizontal="25dp"
-        android:paddingTop="10dp"
-        app:boxStrokeColor="@color/black"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/black"
-        android:textColorHint="@color/black"
-        app:hintTextColor="@color/black"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_password"
-            android:textColor="@color/black"
-            android:inputType="textPassword"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/btnForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="24dp"
-        android:layout_gravity="right"
-        android:layout_marginTop="2dp"
-        android:padding="0dp"
-        android:text="@string/forgot_password"
-        android:textColor="@color/red"
-        android:backgroundTint="@android:color/transparent"/>
-
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="25dp"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/blue"
-        android:text="@string/login"
-        android:textColor="@color/white" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="External Users"
-            android:textSize="12dp"/>
-
-        <Button
-            android:id="@+id/btnContinue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:backgroundTint="@android:color/transparent"
-            android:text="Continue"
-            android:textColor="@color/green"
-            android:textSize="12dp"/>
-    </LinearLayout>
-
-</LinearLayout>
-=======
     tools:context=".LoginPage">
     <TextView
         android:layout_width="wrap_content"
@@ -142,4 +12,3 @@
         android:text=""
 
 </RelativeLayout>
->>>>>>> 5990c0c (updated the string resources)
