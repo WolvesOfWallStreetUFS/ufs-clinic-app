@@ -14,7 +14,7 @@ public class Splash extends Activity
 {
     private ImageView imgLogo;
     private Animation log_in;
-    private static final int Time = 5000;
+    private static final int Time = 4000;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
