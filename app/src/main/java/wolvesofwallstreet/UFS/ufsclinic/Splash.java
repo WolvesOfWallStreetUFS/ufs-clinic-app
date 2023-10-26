@@ -14,7 +14,7 @@ public class Splash extends Activity
 {
     private ImageView imgLogo;
     private Animation log_in;
-    private static final int Time = 4000;
+    private static final int TIME = 4000;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -38,6 +38,6 @@ public class Splash extends Activity
                 startActivity(intent);
                 finish();
             }
-        }, Time);
+        }, TIME);
     }
 }
