@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Onboarding">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Onboarding"
+    android:background="@color/white">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,10 +19,7 @@
             android:layout_width="340dp"
             android:layout_height="240dp"
             android:layout_gravity="center"
-            android:layout_marginStart="22dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="22dp"
-            android:layout_marginBottom="22dp" />
+            android:layout_margin="22dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -50,11 +48,8 @@
                 android:src="@drawable/dot_inactive"
                 android:layout_marginEnd="8dp" />
 
-
         </LinearLayout>
-
     </RelativeLayout>
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -66,12 +61,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="44dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="44dp"
-            android:text="Easily Book Appointments"
+            android:layout_marginBottom="16dp"
+            android:text="@string/appointments_onB1"
             android:textAlignment="center"
             android:textColor="@color/blue"
-            android:textSize="32dp"
+            android:textSize="32sp"
             android:textStyle="bold" />
 
         <TextView
@@ -80,14 +76,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/lblAppointments"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="18dp"
-            android:layout_marginBottom="18dp"
+            android:layout_margin="12dp"
             android:alpha="0.9"
-            android:text="@string/appoinments_onB1"
+            android:text="@string/appointment_ONB1_Desc"
+            android:textColor="@color/blue"
             android:textAlignment="center"
-            android:textSize="18dp" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnSkipTour"
@@ -95,13 +89,13 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtAppointments"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="48dp"
             android:text="@string/skip_tour"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
-            android:backgroundTint="@color/blue"/>
+            android:backgroundTint="@color/blue" />
 
         <Button
             android:id="@+id/btnNext"
@@ -113,11 +107,10 @@
             android:fontFamily="sans-serif"
             android:text="@string/next"
             android:textColor="@color/blue"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:gravity="end"
-            android:backgroundTint="@android:color/transparent"/>
+            android:backgroundTint="@android:color/transparent" />
 
     </RelativeLayout>
-
 </LinearLayout>
