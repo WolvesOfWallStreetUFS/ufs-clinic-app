@@ -17,5 +17,6 @@ public class Onboarding extends AppCompatActivity {
 
         imgSwitcher = findViewById(R.id.imgSwitcherONB);
         btnSkipTour = findViewById(R.id.btnSkipTour);
+        btnNext = findViewById(R.id.btnNext);
     }
 }
