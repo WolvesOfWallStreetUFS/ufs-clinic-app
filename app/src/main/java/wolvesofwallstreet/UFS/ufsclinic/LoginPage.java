@@ -11,6 +11,7 @@ public class LoginPage extends AppCompatActivity {
 
     private Button btnLogin;
     private TextView txtEmail, txtPassword, txtForgotPassword, txtContinue;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
