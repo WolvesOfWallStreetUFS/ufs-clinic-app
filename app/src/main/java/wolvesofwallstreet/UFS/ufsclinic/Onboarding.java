@@ -19,7 +19,6 @@ public class Onboarding extends AppCompatActivity {
             R.drawable.onb3
     };
     private int currentIndex = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
