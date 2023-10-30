@@ -161,7 +161,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/WaveIllustration"
+                    android:src="@drawable/heartbeat"
                     android:layout_marginLeft="60dp"
                     android:layout_gravity="center"/>
             </LinearLayout>
@@ -186,7 +186,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/WaveIllustration"
+                    android:src="@drawable/heartbeat"
                     android:layout_marginLeft="60dp"
                     android:layout_gravity="center"/>
             </LinearLayout>
