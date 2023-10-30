@@ -139,7 +139,7 @@
                     android:layout_marginLeft="60dp"
                     android:layout_gravity="center"/>
 
-            </LinearLayout>
+            </LinearLayout> <!-- appointment-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
@@ -147,6 +147,7 @@
                 android:orientation="horizontal"
                 android:layout_marginVertical="10dp"
                 android:paddingHorizontal="30dp"
+                android:id="@+id/btnHealthTips"
                 android:backgroundTint="@color/light_blue"
                 android:background="@drawable/box_background">
                 <TextView
@@ -156,15 +157,16 @@
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:gravity="center"
-                    android:text="@string/appointment"/>
+                    android:text="@string/health_tips"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/heartbeat"
+                    android:src="@drawable/brain"
                     android:layout_marginLeft="60dp"
                     android:layout_gravity="center"/>
-            </LinearLayout>
+            </LinearLayout> <!-- Health Tips-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
@@ -173,6 +175,7 @@
                 android:layout_marginVertical="10dp"
                 android:paddingHorizontal="30dp"
                 android:backgroundTint="@color/light_blue"
+                android:id="@+id/btnCampaign"
                 android:background="@drawable/box_background">
                 <TextView
                     android:layout_width="wrap_content"
@@ -182,11 +185,39 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:gravity="center"
-                    android:text="@string/appointment"/>
+                    android:textColor="@color/black"
+                    android:text="@string/campaign"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/heartbeat"
+                    android:src="@drawable/peepstanding"
+                    android:layout_marginLeft="60dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout> <!-- Campaign -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:paddingHorizontal="30dp"
+                android:backgroundTint="@color/light_blue"
+                android:id="@+id/btnStudentCounselling"
+                android:background="@drawable/box_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/campaign"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/peepstanding"
                     android:layout_marginLeft="60dp"
                     android:layout_gravity="center"/>
             </LinearLayout>
