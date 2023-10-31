@@ -213,7 +213,7 @@
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textColor="@color/black"
-                    android:text="@string/campaign"/>
+                    android:text="@string/student_counselling"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
