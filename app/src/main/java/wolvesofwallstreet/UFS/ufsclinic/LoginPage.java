@@ -41,6 +41,9 @@ public class LoginPage extends AppCompatActivity {
                     boolean loginSuccessful = login(sEmail, sPassword);
                     if (loginSuccessful) {
                         Toast.makeText(LoginPage.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(LoginPage.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
                     } else {
                         Toast.makeText(LoginPage.this, "Login Failed! Invalid Credentials", Toast.LENGTH_SHORT).show();
                     }
@@ -60,7 +63,7 @@ public class LoginPage extends AppCompatActivity {
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginPage.this, Splash.class);
+                Intent intent = new Intent(LoginPage.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
