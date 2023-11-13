@@ -16,4 +16,11 @@
     <string name="appointment_ONB1_Desc">Effortlessly schedule your clinic appointments at your convenience.
         Say goodbye to long queues and hello to hassle-free bookings.</string>
     <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="health_wellness_centre">Health  wellness Centre</string>
+    <string name="appointment">Appointments</string>
+    <string name="health_tips">Health Tips</string>
+    <string name="campaign">Campaign</string>
+    <string name="student_counselling">Student counselling Development</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

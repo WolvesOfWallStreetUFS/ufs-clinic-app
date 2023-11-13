@@ -12,4 +12,5 @@
     <color name="green">#449842</color>
     <color name="active_dot_color">#0E214B</color>
     <color name="inactive_dot_color">#4D0E214B</color>
+    <color name="light_blue">#6EBFF4</color>
 </resources>

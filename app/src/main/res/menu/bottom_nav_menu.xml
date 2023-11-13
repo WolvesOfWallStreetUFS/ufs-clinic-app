@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:title="Dashboard"
+        android:iconTint="@color/blue"
+        android:icon="@drawable/dashboard"
+        android:id="@+id/btnDashboard"/>
+    <item android:title="Appointment"
+        android:iconTint="@color/blue"
+        android:icon="@drawable/calendar"
+        android:id="@+id/btnAppointment"/>
+    <item android:title="Notifications"
+        android:icon="@drawable/bell"
+        android:iconTint="@color/blue"
+        android:id="@+id/btnNotifications"/>
+    <item android:title="Settings"
+        android:iconTint="@color/blue"
+        android:icon="@drawable/setting"
+        android:id="@+id/btnSettings"/>
+</menu>
