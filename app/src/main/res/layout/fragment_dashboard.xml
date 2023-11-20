@@ -12,11 +12,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:orientation="horizontal"
+        android:backgroundTint="@color/white">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,16 +29,17 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:outlineAmbientShadowColor="@color/blue"
-            android:layout_marginLeft="270dp"
+            android:layout_marginLeft="260dp"
             android:layout_gravity="right|center_horizontal"
             android:src="@drawable/avatar"/>
     </LinearLayout>
 
-
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
+        android:layout_marginVertical="60dp"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:scrollbars="none">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -53,7 +52,7 @@
                 android:text="@string/health_wellness_centre"
                 android:textStyle="bold"
                 android:textSize="24sp"
-                android:layout_marginVertical="30dp"
+                android:layout_marginBottom="30dp"
                 android:textColor="@color/green"/>
 
             <ImageSwitcher
@@ -183,8 +182,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|bottom"
         android:backgroundTint="@color/green"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="70dp"
         android:src="@drawable/add"
 
         />
