@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="20dp"
     android:background="@color/white"
@@ -13,28 +13,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:backgroundTint="@color/white">
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="0dp">
 
         <TextView
+            android:id="@+id/lblGreet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hi"
+            android:text="@string/student_greeting"
             android:textColor="@color/blue"
             android:layout_gravity="center"
-            android:id="@+id/lblGreet"
             android:textSize="32sp"
-            android:textStyle="bold"
-            />
-        <ImageView
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:outlineAmbientShadowColor="@color/blue"
-            android:layout_marginLeft="260dp"
-            android:layout_gravity="right|center_horizontal"
-            android:src="@drawable/avatar"/>
+            android:layout_gravity="end|center_horizontal"
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="150dp">
+
+            <ImageView
+                android:id="@+id/ivProfilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/avatar"
+                android:outlineAmbientShadowColor="@color/blue"/>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_marginVertical="60dp"
         android:layout_height="match_parent"
@@ -42,73 +50,113 @@
         android:scrollbars="none">
 
         <TableLayout
+            android:id="@+id/tblScrollView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:stretchColumns="1">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_background">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_search"
+                    android:layout_gravity="center"
+                    android:padding="8dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@color/search_bg"
+                    android:hint="@string/search_hint"
+                    android:autofillHints="name"
+                    android:textColorHint="@color/search_text"
+                    android:inputType="text"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_mic"
+                    android:layout_gravity="center"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
             <TextView
+                android:id="@+id/lblHealthWellness"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/health_wellness_centre"
+                android:layout_gravity="center"
+                android:gravity="start"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
                 android:textColor="@color/green"/>
 
             <ImageSwitcher
+                android:id="@+id/imgSwitcherHome"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:id="@+id/imgSwitcherHome"/>
+                android:layout_height="150dp" />
+
+            <!--CAROUSEL-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:orientation="horizontal">
+
                 <View
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginHorizontal="5dp"
                     android:id="@+id/viewDotOne"
-                    android:background="@drawable/dot_inactive"/>
-                <View
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/dot_inactive"/>
+                <View
                     android:id="@+id/viewDotTwo"
-                    android:background="@drawable/dot_inactive"/>
-                <View
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/dot_inactive"/>
+                <View
                     android:id="@+id/viewDotThree"
-                    android:background="@drawable/dot_inactive"/>
-                <View
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/dot_inactive"/>
+                <View
                     android:id="@+id/viewDotFour"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginHorizontal="5dp"
                     android:background="@drawable/dot_inactive"/>
 
             </LinearLayout>
+
+            <!--APPOINTMENTS CARD-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:layout_gravity="center"
                 android:orientation="vertical"
                 android:padding="20dp"
-                android:background="@drawable/box_background"
-                >
+                android:background="@drawable/box_background">
+
                 <TextView
+                    android:id="@+id/lblAppointmentHeading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/lblAppointmentHeading"
                     android:layout_marginVertical="10dp"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/blue"
-                    android:text="You dont have any appointments"
-                    />
+                    android:text="@string/no_appointments"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -116,17 +164,18 @@
                     android:textSize="16sp"
                     android:textColor="@color/blue"
                     android:id="@+id/lblAppointmentDetails"
-                    android:text="Press the green button to add an appointment or scroll below to access health information."/>
+                    android:text="@string/press_green_button"/>
             </LinearLayout>
 
+            <!-- HEALTH TIPS-->
             <LinearLayout
+                android:id="@+id/btnHealthTips"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="140dp"
                 android:layout_gravity="center"
                 android:orientation="horizontal"
                 android:layout_marginVertical="10dp"
                 android:paddingHorizontal="30dp"
-                android:id="@+id/btnHealthTips"
                 android:backgroundTint="@color/light_blue"
                 android:background="@drawable/box_background">
                 <TextView
@@ -143,18 +192,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/brain"
-                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
                     android:layout_gravity="center"/>
-            </LinearLayout> <!-- Health Tips-->
+            </LinearLayout>
+
+            <!-- CAMPAIGN -->
             <LinearLayout
+                android:id="@+id/btnCampaign"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="140dp"
                 android:layout_gravity="center"
                 android:orientation="horizontal"
                 android:layout_marginVertical="10dp"
                 android:paddingHorizontal="30dp"
                 android:backgroundTint="@color/light_blue"
-                android:id="@+id/btnCampaign"
                 android:background="@drawable/box_background">
                 <TextView
                     android:layout_width="wrap_content"
@@ -170,22 +221,49 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/peepstanding"
-                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
                     android:layout_gravity="center"/>
-            </LinearLayout> <!-- Campaign -->
+            </LinearLayout>
+
+            <!-- CAMPAIGN -->
+            <LinearLayout
+                android:id="@+id/btnCampaigns"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:paddingHorizontal="30dp"
+                android:backgroundTint="@color/light_blue"
+                android:background="@drawable/box_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/student_counselling"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/peepstanding"
+                    android:layout_marginStart="60dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
 
         </TableLayout>
     </ScrollView>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right|bottom"
+        android:layout_gravity="end|bottom"
         android:backgroundTint="@color/green"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="70dp"
-        android:src="@drawable/add"
-
-        />
+        android:src="@drawable/add" />
 
 </LinearLayout>
