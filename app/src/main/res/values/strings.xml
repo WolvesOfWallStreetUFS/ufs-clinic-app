@@ -24,7 +24,7 @@
     <string name="student_greeting">Hi Student</string>
     <string name="health_wellness_centre">Health &amp; wellness Centre</string>
     <string name="no_appointments">You don\'t have any appointments</string>
-    <string name="press_green_button">Press the green button to add an appointment or scroll below to access health information.</string>
+    <string name="press_green_button">Press the green button to add an \nappointment or scroll below to access health\n information.</string>
     <string name="appointment">Appointments</string>
     <string name="health_tips">Health Tips</string>
     <string name="campaign">Campaign</string>
