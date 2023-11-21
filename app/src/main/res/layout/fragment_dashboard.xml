@@ -27,6 +27,7 @@
             android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardProfilePicture"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="end|center_horizontal"
@@ -44,7 +45,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_marginVertical="60dp"
+        android:layout_marginVertical="20dp"
         android:layout_height="match_parent"
         android:fillViewport="true"
         android:scrollbars="none">
@@ -62,6 +63,7 @@
                 android:background="@drawable/rounded_background">
 
                 <ImageView
+                    android:id="@+id/iconSearch"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:src="@drawable/ic_search"
@@ -69,6 +71,7 @@
                     android:padding="8dp"/>
 
                 <EditText
+                    android:id="@+id/editTxtSearch"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_weight="1"
@@ -79,6 +82,7 @@
                     android:inputType="text"/>
 
                 <ImageView
+                    android:id="@+id/iconMic"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:src="@drawable/ic_mic"
@@ -110,7 +114,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_margin="4dp">
 
                 <View
                     android:id="@+id/viewDotOne"
@@ -123,7 +128,7 @@
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:layout_marginHorizontal="5dp"
-                    android:background="@drawable/dot_inactive"/>
+                    android:background="@drawable/dot_active"/>
                 <View
                     android:id="@+id/viewDotThree"
                     android:layout_width="10dp"
@@ -140,32 +145,44 @@
             </LinearLayout>
 
             <!--APPOINTMENTS CARD-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_gravity="center"
-                android:orientation="vertical"
-                android:padding="20dp"
-                android:background="@drawable/box_background">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNotifications"
+                android:layout_width="312dp"
+                android:layout_height="116dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/apps_bg">
 
-                <TextView
-                    android:id="@+id/lblAppointmentHeading"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/blue"
-                    android:text="@string/no_appointments"/>
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:textColor="@color/blue"
-                    android:id="@+id/lblAppointmentDetails"
-                    android:text="@string/press_green_button"/>
-            </LinearLayout>
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_appointments"
+                        android:textColor="#001842"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4dp"
+                        android:text="@string/press_green_button"
+                        android:textAlignment="viewStart"
+                        android:textColor="#B349454F"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
 
             <!-- HEALTH TIPS-->
             <LinearLayout
@@ -179,6 +196,7 @@
                 android:backgroundTint="@color/light_blue"
                 android:background="@drawable/box_background">
                 <TextView
+                    android:id="@+id/txtHealthTips"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -189,6 +207,7 @@
                     android:gravity="center"
                     android:text="@string/health_tips"/>
                 <ImageView
+                    android:id="@+id/imgHealthTips"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/brain"
@@ -208,6 +227,7 @@
                 android:backgroundTint="@color/light_blue"
                 android:background="@drawable/box_background">
                 <TextView
+                    android:id="@+id/txtCampaign"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -218,6 +238,7 @@
                     android:textColor="@color/black"
                     android:text="@string/campaign"/>
                 <ImageView
+                    android:id="@+id/imgCampaign"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/peepstanding"
@@ -227,7 +248,7 @@
 
             <!-- CAMPAIGN -->
             <LinearLayout
-                android:id="@+id/btnCampaigns"
+                android:id="@+id/btnSCD"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:layout_gravity="center"
@@ -237,6 +258,7 @@
                 android:backgroundTint="@color/light_blue"
                 android:background="@drawable/box_background">
                 <TextView
+                    android:id="@+id/txtSCD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start|center"
@@ -246,6 +268,7 @@
                     android:textColor="@color/black"
                     android:text="@string/student_counselling"/>
                 <ImageView
+                    android:id="@+id/imgSCD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/peepstanding"
