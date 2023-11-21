@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="20dp"
     android:background="@color/white"
@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:backgroundTint="@color/white">
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="0dp">
 
         <TextView
             android:id="@+id/lblGreet"
@@ -25,14 +26,20 @@
             android:textSize="32sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imgProfilePicture"
+        <androidx.cardview.widget.CardView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:outlineAmbientShadowColor="@color/blue"
-            android:layout_marginStart="150dp"
             android:layout_gravity="end|center_horizontal"
-            android:src="@drawable/avatar"/>
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="150dp">
+
+            <ImageView
+                android:id="@+id/ivProfilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/avatar"
+                android:outlineAmbientShadowColor="@color/blue"/>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 
     <ScrollView
@@ -48,6 +55,37 @@
             android:layout_height="wrap_content"
             android:stretchColumns="1">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_background">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_search"
+                    android:layout_gravity="center"
+                    android:padding="8dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@color/search_bg"
+                    android:hint="@string/search_hint"
+                    android:autofillHints="name"
+                    android:textColorHint="@color/search_text"
+                    android:inputType="text"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_mic"
+                    android:layout_gravity="center"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/lblHealthWellness"
                 android:layout_width="wrap_content"
@@ -58,6 +96,7 @@
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
                 android:textColor="@color/green"/>
 
             <ImageSwitcher
@@ -144,7 +183,7 @@
             <LinearLayout
                 android:id="@+id/btnHealthTips"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="140dp"
                 android:layout_gravity="center"
                 android:orientation="horizontal"
                 android:layout_marginVertical="10dp"
@@ -171,14 +210,14 @@
 
             <!-- CAMPAIGN -->
             <LinearLayout
+                android:id="@+id/btnCampaign"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="140dp"
                 android:layout_gravity="center"
                 android:orientation="horizontal"
                 android:layout_marginVertical="10dp"
                 android:paddingHorizontal="30dp"
                 android:backgroundTint="@color/light_blue"
-                android:id="@+id/btnCampaign"
                 android:background="@drawable/box_background">
                 <TextView
                     android:layout_width="wrap_content"
@@ -190,6 +229,34 @@
                     android:gravity="center"
                     android:textColor="@color/black"
                     android:text="@string/campaign"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/peepstanding"
+                    android:layout_marginStart="60dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <!-- CAMPAIGN -->
+            <LinearLayout
+                android:id="@+id/btnCampaigns"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:paddingHorizontal="30dp"
+                android:backgroundTint="@color/light_blue"
+                android:background="@drawable/box_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/student_counselling"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
