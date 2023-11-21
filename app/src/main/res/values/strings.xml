@@ -1,3 +1,5 @@
+<!DOCTYPE resources [
+]>
 <resources>
     //SPLASH SCREEN
     <string name="app_name">UFS CLINIC</string>
@@ -30,6 +32,15 @@
     <string name="health_tips">Health Tips</string>
     <string name="campaign">Campaign</string>
     <string name="student_counselling">Student\n Counselling \n&amp; \nDevelopment</string>
+
+    //SETTINGS
+    <string name="settings">Settings</string>
+    <string name="notifs">Notifications</string>
+    <string name="appearance">Appearance</string>
+    <string name="privacy">Privacy &amp; Security </string>
+    <string name="sound">Sound</string>
+    <string name="language">Language</string>
+    <string name="email">2022145723@ufs4life.ac.za</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
