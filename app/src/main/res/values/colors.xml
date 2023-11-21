@@ -16,4 +16,6 @@
     <color name="search_bg">#66D9D9D9</color>
     <color name="search_text">#858585</color>
     <color name="apps_bg">#F3EDF7</color>
+    <color name="grey">#858585</color>
+    <color name="settings">#001842</color>
 </resources>
