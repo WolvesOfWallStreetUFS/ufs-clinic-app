@@ -1,5 +1,6 @@
 package wolvesofwallstreet.UFS.ufsclinic;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
@@ -13,6 +14,7 @@ import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -105,54 +107,106 @@ public class DashboardFragment extends Fragment {
 
         //Event Listeners & Logic
 
-        //Health Tips
-        btnHealthTips = myView.findViewById(R.id.btnHealthTips);
-        txtHealthTips = myView.findViewById(R.id.txtHealthTips);
-        imgHealthTips = myView.findViewById(R.id.imgHealthTips);
-        btnHealthTips.setOnClickListener(new View.OnClickListener() {
+        // Add click listener to the FAB
+        addFab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
+            public void onClick(View v) {
+                Intent goToSetAppointmentsFrag = new Intent(getContext(), AppointmentsFragment.class);
+                startActivity(goToSetAppointmentsFrag);
             }
         });
+
+        // Add click listener to the search icon
+        iconSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                performSearch();
+            }
+        });
+
+        // Add click listener to the mic icon
+        iconMic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startVoiceRecognition();
+            }
+        });
+
+        // Add click listener to the health tips section
         txtHealthTips.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
-            }
-        });
-        imgHealthTips.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
+            public void onClick(View v) {
+                navigateToHealthTips();
             }
         });
 
-
-        //Campaigns
-        btnCampaigns = myView.findViewById(R.id.btnCampaign);
-        txtCampaign = myView.findViewById(R.id.txtCampaign);
-        imgCampaign = myView.findViewById(R.id.imgCampaign);
-        btnCampaigns.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        // Add click listener to the campaign section
         txtCampaign.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
+            public void onClick(View v) {
+                navigateToCampaign();
             }
         });
-        imgCampaign.setOnClickListener(new View.OnClickListener() {
+
+        // Add click listener to the student counselling section
+        txtSCD.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
+            public void onClick(View v) {
+                navigateToStudentCounselling();
             }
         });
+
+        // Add your additional logic and event listeners here
 
         return myView;
-
     }
+
+    private void performSearch() {
+        // Get the search query from your EditText
+        EditText editTextSearch = getView().findViewById(R.id.editTxtSearch);
+        String searchQuery = editTextSearch.getText().toString();
+
+        // Perform the search using the searchQuery
+
+
+        // Implement search logic here
+
+
+        Toast.makeText(getActivity(), "Search: " + searchQuery, Toast.LENGTH_SHORT).show();
+    }
+
+    private void startVoiceRecognition() {
+        // Implement voice recognition logic here
+
+
+        Toast.makeText(getActivity(), "Voice recognition not implemented", Toast.LENGTH_SHORT).show();
+    }
+
+    private void navigateToHealthTips() {
+        // Implement navigation logic to health tips here
+
+        // start a new activity or fragment
+
+
+        Toast.makeText(getActivity(), "Navigate to Health Tips", Toast.LENGTH_SHORT).show();
+    }
+
+    private void navigateToCampaign() {
+        // Implement navigation logic to campaign here
+
+        // start a new activity or fragment
+
+
+        Toast.makeText(getActivity(), "Navigate to Campaign", Toast.LENGTH_SHORT).show();
+    }
+
+    private void navigateToStudentCounselling() {
+        // Implement navigation logic to student counselling here
+
+        // start a new activity or fragment
+
+        Toast.makeText(getActivity(), "Navigate to Student Counselling", Toast.LENGTH_SHORT).show();
+    }
+
+
 }
