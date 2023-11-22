@@ -74,7 +74,7 @@
             android:id="@+id/lblName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Precious"
+            android:text="@string/student_name"
             android:textColor="@color/blue"
             android:layout_gravity="center"
             android:textSize="32sp"
@@ -114,6 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingEnd="12dp"
+                android:paddingStart="12dp"
                 android:paddingVertical="12dp"/>
 
             <TextView
@@ -133,6 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingEnd="12dp"
+                android:paddingStart="12dp"
                 android:paddingVertical="12dp"
                 android:layout_gravity="end"/>
 
@@ -140,37 +142,43 @@
 
         <!-- Actual Settings Items -->
         <!-- ACCOUNT -->
-        <include layout="@layout/settings_item"
+        <include
+            layout="@layout/settings_item"
             android:id="@+id/itemAccount"
             app:settingIcon="@drawable/icon_account"
             app:settingText="@string/account"/>
 
         <!-- NOTIFICATIONS -->
-        <include layout="@layout/settings_item"
+        <include
+            layout="@layout/settings_item"
             android:id="@+id/itemNotifications"
             app:settingIcon="@drawable/icon_notifications"
             app:settingText="@string/notifs"/>
 
         <!-- APPEARANCE -->
-        <include layout="@layout/settings_item"
+        <include
+            layout="@layout/settings_item"
             android:id="@+id/itemAppearance"
             app:settingIcon="@drawable/icon_appearance"
             app:settingText="@string/appearance"/>
 
         <!-- PRIVACY & SECURITY -->
-        <include layout="@layout/settings_item"
+        <include
+            layout="@layout/settings_item"
             android:id="@+id/itemPrivacy"
             app:settingIcon="@drawable/icon_privacy"
             app:settingText="@string/privacy"/>
 
         <!-- SOUND -->
-        <include layout="@layout/settings_item"
+        <include
+            layout="@layout/settings_item"
             android:id="@+id/itemSound"
             app:settingIcon="@drawable/icon_sound"
             app:settingText="@string/sound"/>
 
         <!-- LANGUAGE -->
-        <include layout="@layout/settings_item"
+        <include
+            layout="@layout/settings_item"
             android:id="@+id/itemLanguage"
             app:settingIcon="@drawable/icon_language"
             app:settingText="@string/language"/>
