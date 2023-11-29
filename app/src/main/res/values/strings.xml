@@ -35,6 +35,7 @@
     //APPOINTMENTS
     <string name="appointments_label">Appointments</string>
     <string name="new_appointments_label">New Appointments</string>
+    <string name="select_date">Select date &amp; available timeslot below: </string>
 
 
     //NOTIFICATIONS

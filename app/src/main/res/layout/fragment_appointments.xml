@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:backgroundTint="@color/white"
-        android:layout_marginTop="16dp">
+        android:padding="12dp">
 
         <TextView
             android:id="@+id/lblAppointmentReminder"
@@ -47,13 +47,39 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_gravity="start"
-            android:text="Select date &amp; available timelsot below: "
+            android:text="Select date &amp; available time slot below: "
             android:textStyle="bold"
             android:textSize="24sp"
             android:gravity="center"
             android:textColor="@color/blue"
-            android:paddingTop="18dp"/>
+            android:padding="12dp"/>
     </LinearLayout>
 
+    <!-- Date Picker -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select date:"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"/>
+
+
+    <!-- Date Picker -->
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:theme="@style/DatePickerStyle"/>
+
+    <!-- Time Picker -->
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TimePickerStyle"/>
 
 </LinearLayout>
