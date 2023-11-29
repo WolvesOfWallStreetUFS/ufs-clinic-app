@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,26 +9,16 @@
     android:background="@color/white"
     tools:context=".AppointmentsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <!-- Header -->
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/lblSettings"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:backgroundTint="@color/white"
-        android:gravity="start"
-        android:layout_marginTop="8dp">
-
-        <TextView
-            android:id="@+id/lblSettings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/notifs_label"
-            android:textColor="@color/blue"
-            android:textSize="32sp"
-            android:textStyle="bold"
-            android:padding="8dp"/>
-    </LinearLayout>
+        android:text="@string/notifs_label"
+        android:textColor="@color/blue"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:padding="8dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -60,8 +49,9 @@
 
                 <TextView
                     android:id="@+id/lblAppointmentReminder"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_gravity="start"
                     android:padding="4dp"
                     android:text="@string/appointReminder"
@@ -71,6 +61,7 @@
 
             </LinearLayout>
 
+            <!-- Description for Appointment Reminder -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -88,8 +79,9 @@
                     android:paddingVertical="12dp"/>
                 <TextView
                     android:id="@+id/txtAppointmentDescription"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_gravity="start"
                     android:paddingEnd="8dp"
                     android:text="@string/ReminderDescription"
@@ -118,8 +110,9 @@
 
                 <TextView
                     android:id="@+id/lblNewSlot"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_gravity="start"
                     android:padding="4dp"
                     android:text="@string/new_slot"
@@ -129,6 +122,7 @@
 
             </LinearLayout>
 
+            <!-- Description for New Slot -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -146,8 +140,9 @@
                     android:paddingVertical="12dp"/>
                 <TextView
                     android:id="@+id/txtNewSlotDescription"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_gravity="start"
                     android:paddingEnd="8dp"
                     android:text="@string/newSlotDescription"
@@ -176,8 +171,9 @@
 
                 <TextView
                     android:id="@+id/lblHealthTips"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_gravity="start"
                     android:padding="4dp"
                     android:text="@string/health_tips"
@@ -187,6 +183,7 @@
 
             </LinearLayout>
 
+            <!-- Description for Health Tip -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -204,8 +201,9 @@
                     android:paddingVertical="12dp"/>
                 <TextView
                     android:id="@+id/txtHealthTipsDescription"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_gravity="start"
                     android:paddingEnd="8dp"
                     android:text="@string/healthTipDescription"
@@ -233,8 +231,9 @@
 
                 <TextView
                     android:id="@+id/lblFeedbackRequest"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_gravity="start"
                     android:padding="4dp"
                     android:text="@string/feedback_request"
@@ -244,6 +243,7 @@
 
             </LinearLayout>
 
+            <!-- Description for Feedback Request -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -261,8 +261,9 @@
                     android:paddingVertical="12dp"/>
                 <TextView
                     android:id="@+id/txtfeedbackDescription"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_gravity="start"
                     android:paddingEnd="8dp"
                     android:text="@string/feedbackDescription"
@@ -272,8 +273,5 @@
             </LinearLayout>
 
         </TableLayout>
-
-
     </RelativeLayout>
-
 </LinearLayout>
