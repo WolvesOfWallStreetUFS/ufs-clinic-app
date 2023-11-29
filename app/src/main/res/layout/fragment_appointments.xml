@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:gravity="start"
         android:layout_marginTop="8dp">
 
@@ -27,7 +27,7 @@
             android:id="@+id/lblSettings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/appointments_label"
+            android:text="@string/new_appointments_label"
             android:textColor="@color/blue"
             android:textSize="32sp"
             android:textStyle="bold"
@@ -37,48 +37,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/using_computer"
-            android:layout_gravity="center"
-            android:paddingTop="120dp"
-            android:paddingBottom="12dp"/>
+        android:orientation="horizontal"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="16dp">
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/lblAppointmentReminder"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="You don't have any appointments"
-            android:textSize="22sp"
-            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:text="Select date &amp; available timelsot below: "
             android:textStyle="bold"
+            android:textSize="24sp"
             android:gravity="center"
-            android:padding="10dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Click the plus button to add"
-            android:textSize="22sp"
-            android:textColor="@color/search_text"
-            android:textStyle="italic"
-            android:gravity="center"/>
+            android:textColor="@color/blue"
+            android:paddingTop="18dp"/>
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/add_fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:src="@drawable/add_button"
-            android:padding="14dp"/>
-    </RelativeLayout>
 </LinearLayout>

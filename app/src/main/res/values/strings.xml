@@ -34,6 +34,8 @@
 
     //APPOINTMENTS
     <string name="appointments_label">Appointments</string>
+    <string name="new_appointments_label">New Appointments</string>
+
 
     //NOTIFICATIONS
     <string name="notifs_label">Notifications</string>
