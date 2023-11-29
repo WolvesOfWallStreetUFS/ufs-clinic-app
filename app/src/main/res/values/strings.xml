@@ -1,5 +1,4 @@
-<!DOCTYPE resources [
-]>
+<!DOCTYPE resources []>
 <resources>
     //SPLASH SCREEN
     <string name="app_name">UFS CLINIC</string>
@@ -33,8 +32,23 @@
     <string name="campaign">Campaign</string>
     <string name="student_counselling">Student\n Counselling \n&amp; \nDevelopment</string>
 
+    //APPOINTMENTS
+    <string name="appointments_label">Appointments</string>
+
     //NOTIFICATIONS
     <string name="notifs_label">Notifications</string>
+    <string name="appointReminder">Appointment Reminder</string>
+    <string name="ReminderDescription">Hi there! Just a friendly reminder that your upcoming appointment
+        with the UFS Clinic is tomorrow at 10:00 AM. We look forward to assisting you.</string>
+    <string name="new_slot">New Appointment Slot</string>
+    <string name="newSlotDescription">Great news! New appointment slots are now available due to
+        increased clinic capacity. Book your preferred time now to secure your visit.</string>
+    <string name="heath_tips">Health Tip of the Day</string>
+    <string name="healthTipDescription">Stay healthy and energized! Check out today\'s health tip on
+        maintaining a balanced diet. Tap to read more.</string>
+    <string name="feedback_request">Feedback Request</string>
+    <string name="feedbackDescription">We value your opinion! After your recent clinic visit, please
+        take a moment to provide feedback and help us enhance our services. Your input matters.</string>
 
     //SETTINGS
     <string name="student_name">Nthabiseng</string>

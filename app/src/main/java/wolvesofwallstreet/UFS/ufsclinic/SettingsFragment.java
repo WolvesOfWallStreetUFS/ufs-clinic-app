@@ -1,5 +1,6 @@
 package wolvesofwallstreet.UFS.ufsclinic;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -18,11 +19,9 @@ import android.widget.TextView;
  */
 public class SettingsFragment extends Fragment {
     private ImageButton btnEditProfile;
-    private TextView lblSetting;
     private TextView lblName;
     private TextView lblEmail;
     private ImageView iconSetting;
-    private TextView txtSetting;
     private ImageView iconArrowSelect;
     private View itemAccount; // include layout reference
     private View itemNotifications; // include layout reference
@@ -78,11 +77,9 @@ public class SettingsFragment extends Fragment {
         View myView = inflater.inflate(R.layout.fragment_settings, container, false);
 
         btnEditProfile = myView.findViewById(R.id.btnEditProfile);
-        lblSetting = myView.findViewById(R.id.lblSetting);
         lblName = myView.findViewById(R.id.lblName);
         lblEmail = myView.findViewById(R.id.lblEmail);
         iconSetting = myView.findViewById(R.id.iconSetting);
-        lblSetting = myView.findViewById(R.id.lblSetting);
         iconArrowSelect = myView.findViewById(R.id.iconArrowSelect);
         itemAccount = myView.findViewById(R.id.itemAccount);
         itemNotifications = myView.findViewById(R.id.itemNotifications);
@@ -96,18 +93,31 @@ public class SettingsFragment extends Fragment {
              @Override
              public void onClick(View v) {
                  // Handle edit profile button click
+                 Intent editProfileIntent = new Intent(getActivity(), EditProfileActivity.class);
+                 startActivity(editProfileIntent);
              }
          });
+
+        // Set user-specific information
+
+        lblName.setText("Nthabiseng");
+
+        lblEmail.setText("2021417219#ufs4life.ac.za");
          itemAccount.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
                  // Handle click on account settings
+                 Intent accountIntent = new Intent(getActivity(), AccountSettingsActivity.class);
+                 startActivity(accountIntent);
              }
          });
         itemNotifications.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Handle click on notification settings
+                Intent notificationsIntent = new Intent(getActivity(), NotificationsSettingsActivity.class);
+
+                startActivity(notificationsIntent);
             }
         });
         itemAppearance.setOnClickListener(new View.OnClickListener() {
