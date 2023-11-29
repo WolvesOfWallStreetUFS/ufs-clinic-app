@@ -9,7 +9,7 @@
     android:layout_marginTop="16dp">
 
     <ImageView
-        android:id="@+id/iconSetting"
+        android:id="@+id/iconAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingEnd="12dp"
@@ -18,7 +18,7 @@
         android:src="@drawable/icon_account"/>
 
     <TextView
-        android:id="@+id/lblSetting"
+        android:id="@+id/lblAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/settings"
@@ -37,4 +37,5 @@
         android:paddingVertical="12dp"
         android:layout_gravity="end"
         android:src="@drawable/arrow_forward"/>
+
 </LinearLayout>

@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +17,19 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class SettingsFragment extends Fragment {
+    private ImageButton btnEditProfile;
+    private TextView lblSetting;
+    private TextView lblName;
+    private TextView lblEmail;
+    private ImageView iconSetting;
+    private TextView txtSetting;
+    private ImageView iconArrowSelect;
+    private View itemAccount; // include layout reference
+    private View itemNotifications; // include layout reference
+    private View itemAppearance; // include layout reference
+    private View itemPrivacy; // include layout reference
+    private View itemSound; // include layout reference
+    private View itemLanguage; // include layout reference
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +75,67 @@ public class SettingsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false);
+        View myView = inflater.inflate(R.layout.fragment_settings, container, false);
+
+        btnEditProfile = myView.findViewById(R.id.btnEditProfile);
+        lblSetting = myView.findViewById(R.id.lblSetting);
+        lblName = myView.findViewById(R.id.lblName);
+        lblEmail = myView.findViewById(R.id.lblEmail);
+        iconSetting = myView.findViewById(R.id.iconSetting);
+        lblSetting = myView.findViewById(R.id.lblSetting);
+        iconArrowSelect = myView.findViewById(R.id.iconArrowSelect);
+        itemAccount = myView.findViewById(R.id.itemAccount);
+        itemNotifications = myView.findViewById(R.id.itemNotifications);
+        itemAppearance = myView.findViewById(R.id.itemAppearance);
+        itemPrivacy = myView.findViewById(R.id.itemPrivacy);
+        itemSound = myView.findViewById(R.id.itemSound);
+        itemLanguage = myView.findViewById(R.id.itemLanguage);
+
+        //onClickListeners
+         btnEditProfile.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 // Handle edit profile button click
+             }
+         });
+         itemAccount.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 // Handle click on account settings
+             }
+         });
+        itemNotifications.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Handle click on notification settings
+            }
+        });
+        itemAppearance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Handle click on appearance settings
+            }
+        });
+        itemPrivacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Handle click on privacy settings
+            }
+        });
+        itemSound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Handle click on sound settings
+            }
+        });
+        itemLanguage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Handle click on language settings
+            }
+        });
+
+        return myView;
+
     }
 }
