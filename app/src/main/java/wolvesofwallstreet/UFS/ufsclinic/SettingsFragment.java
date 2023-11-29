@@ -1,5 +1,6 @@
 package wolvesofwallstreet.UFS.ufsclinic;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -92,18 +93,31 @@ public class SettingsFragment extends Fragment {
              @Override
              public void onClick(View v) {
                  // Handle edit profile button click
+                 Intent editProfileIntent = new Intent(getActivity(), EditProfileActivity.class);
+                 startActivity(editProfileIntent);
              }
          });
+
+        // Set user-specific information
+
+        lblName.setText("Nthabiseng");
+
+        lblEmail.setText("2021417219#ufs4life.ac.za");
          itemAccount.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
                  // Handle click on account settings
+                 Intent accountIntent = new Intent(getActivity(), AccountSettingsActivity.class);
+                 startActivity(accountIntent);
              }
          });
         itemNotifications.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Handle click on notification settings
+                Intent notificationsIntent = new Intent(getActivity(), NotificationsSettingsActivity.class);
+
+                startActivity(notificationsIntent);
             }
         });
         itemAppearance.setOnClickListener(new View.OnClickListener() {
