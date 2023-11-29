@@ -18,11 +18,9 @@ import android.widget.TextView;
  */
 public class SettingsFragment extends Fragment {
     private ImageButton btnEditProfile;
-    private TextView lblSetting;
     private TextView lblName;
     private TextView lblEmail;
     private ImageView iconSetting;
-    private TextView txtSetting;
     private ImageView iconArrowSelect;
     private View itemAccount; // include layout reference
     private View itemNotifications; // include layout reference
@@ -78,11 +76,9 @@ public class SettingsFragment extends Fragment {
         View myView = inflater.inflate(R.layout.fragment_settings, container, false);
 
         btnEditProfile = myView.findViewById(R.id.btnEditProfile);
-        lblSetting = myView.findViewById(R.id.lblSetting);
         lblName = myView.findViewById(R.id.lblName);
         lblEmail = myView.findViewById(R.id.lblEmail);
         iconSetting = myView.findViewById(R.id.iconSetting);
-        lblSetting = myView.findViewById(R.id.lblSetting);
         iconArrowSelect = myView.findViewById(R.id.iconArrowSelect);
         itemAccount = myView.findViewById(R.id.itemAccount);
         itemNotifications = myView.findViewById(R.id.itemNotifications);
